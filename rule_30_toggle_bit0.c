@@ -42,7 +42,7 @@ void rule_30(uint64_t* up)
   rotate_left(&u_right); 
   *up = u_left ^ ((*up) | u_right); // this is rule 30!
   
-  // add spice: toggle bit 0 (rightmost bit)
+  // add spice: toggle bit 0 (rightmost bit) with XOR
   *up = (*up) ^ 1;
 }
 //--------------------------------
